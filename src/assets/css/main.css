@@ -1,0 +1,88 @@
+/*General Settings For The WebPage*/
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+/*The Main Container*/
+.container{
+    display : grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows:99vh;
+    padding : 2px;
+    overflow: hidden;
+}
+.side-bar{
+    grid-column: 1/2;
+    border-right : 1px solid #c937ae;
+    display : flex;
+    justify-content: start;
+    flex-direction: column;
+    padding : 5px;
+    overflow-y : auto;
+    overflow-x: hidden;
+}
+.side-bar-title{
+    text-align: center;
+    margin : 10px;
+    color : #c937ae;
+    border-bottom: 1px solid purple;
+}
+.side-bar-item{
+    margin-bottom : 30px;
+    background-color: #c937ae;
+    padding : 5px;
+    border-radius: 30px;
+    color : #fff;
+    text-align: center;
+}
+.side-bar-item:hover{
+    background-color : #a5268e;
+    cursor : pointer;
+}
+.main{
+    display : grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.main-input{
+    text-align: center;
+}
+.main-title{
+    color :#c937ae;
+    margin-top : 15px;      
+}
+.input{
+    margin-top : 10px;
+    width : 85%;
+    height : 30px;
+    border-top : none;
+    border-right : none;
+    border-left : none;
+    transition: all 1s;
+}
+.input:focus{
+    border-bottom: 1px solid  #c937ae;
+    outline: none;
+    width : 90%;
+}
+.add-note-button{
+    margin : 10px;
+    width : 80%;
+    height : 25px;
+    color : #fff;
+    background-color : #c937ae;
+    border : none;
+}
+.add-note-button:hover{
+    background-color : #a5268e;
+}
+.description-input{
+    margin-top : 10px;
+    width : 85%;
+    height : 30px;
+    border-top : none;
+    border-right : none;
+    border-left : none;
+    transition: all 1s;
+}
