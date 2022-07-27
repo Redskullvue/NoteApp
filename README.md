@@ -1,5 +1,5 @@
 # localstroagetest
-
+NOTE : This Project is just a mobile first application and the UI is yet to be developed
 ## Project setup
 ```
 npm install
